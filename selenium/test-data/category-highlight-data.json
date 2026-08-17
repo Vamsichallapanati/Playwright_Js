@@ -1,0 +1,11 @@
+{
+  "categories": {
+    "phones": "Phones",
+    "laptops": "Laptops",
+    "monitors": "Monitors"
+  },
+  "expectedBehavior": {
+    "highlightPersistence": "Category should remain highlighted during scroll",
+    "exclusiveHighlight": "Only one category can be highlighted at a time"
+  }
+}
