@@ -1,0 +1,48 @@
+name: Selenium Java BDD
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - run: mvn test -P smoke
+        env:
+          CI: true
+          HEADLESS: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results-smoke
+          path: allure-results
+
+  regression:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - run: mvn test -P regression
+        env:
+          CI: true
+          HEADLESS: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results-regression
+          path: allure-results
