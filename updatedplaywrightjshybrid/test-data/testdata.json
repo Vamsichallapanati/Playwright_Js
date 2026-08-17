@@ -1,0 +1,23 @@
+{
+  "policy": {
+    "validCustomerDetails": {
+      "customerName": "John Smith",
+      "customerEmail": "john.smith@example.com",
+      "customerPhone": "555-0123",
+      "customerAddress": "123 Main Street"
+    },
+    "coverageOptions": {
+      "coverageType": "Comprehensive",
+      "coverageAmount": "500000",
+      "deductible": "1000"
+    },
+    "premiumAmount": "1250.00",
+    "effectiveDates": {
+      "startDate": "2024-02-01",
+      "endDate": "2025-02-01"
+    },
+    "validation": {
+      "policyTypeRequiredError": "Policy type is required"
+    }
+  }
+}
