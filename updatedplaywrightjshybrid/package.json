@@ -1,0 +1,24 @@
+{
+  "name" : "@qentrix/playwright-js-hybrid-framework",
+  "version" : "1.0.0",
+  "private" : true,
+  "type" : "module",
+  "engines" : {
+    "node" : ">=20"
+  },
+  "scripts" : {
+    "install:browsers" : "playwright install chromium firefox webkit",
+    "test:list" : "playwright test --list --pass-with-no-tests",
+    "test" : "playwright test --pass-with-no-tests",
+    "test:e2e" : "playwright test --pass-with-no-tests",
+    "test:smoke" : "playwright test --grep @smoke --pass-with-no-tests",
+    "test:regression" : "playwright test --grep @regression --pass-with-no-tests",
+    "test:framework" : "playwright test --project=chromium --pass-with-no-tests"
+  },
+  "devDependencies" : {
+    "@playwright/test" : "^1.61.1"
+  },
+  "dependencies" : {
+    "dotenv" : "^17.2.3"
+  }
+}
