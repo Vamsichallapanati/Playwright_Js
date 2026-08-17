@@ -1,0 +1,7 @@
+{
+  "baseUrl": "",
+  "featurePath": "/feature-path",
+  "expectedHeading": "Page Heading",
+  "successMessage": "Saved successfully",
+  "requiredFieldMessage": "Required"
+}
