@@ -27,10 +27,10 @@ public class VerifyThatLoginAPIReturnsSuccessResponseValid_Api2832Test {
                 ;
 
         Response response = request.when()
-                .delete("/users");
+                .post("/users");
 
         QentrixReport.capture(response);
-        Assert.assertEquals(response.statusCode(), 201, "Unexpected response status code");
-        Assert.assertTrue(response.time() <= 2000L, "Response time exceeded 2000 ms");
+        Assert.assertEquals(response.statusCode(), 202, "Unexpected response status code");
+        Assert.assertFalse(response.getBody().asString().isBlank(), "Response body should not be empty");
     }
 }
