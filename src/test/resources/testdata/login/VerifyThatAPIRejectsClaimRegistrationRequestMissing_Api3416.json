@@ -7,10 +7,10 @@
   "projectName" : "360GlobalNet",
   "tags" : [ "API" ],
   "apiDetails" : {
-    "method" : "DELETE",
+    "method" : "PUT",
     "endpointPath" : "/users",
-    "expectedStatusCode" : "202",
-    "responseAssertion" : "body-not-empty",
+    "expectedStatusCode" : "200",
+    "responseAssertion" : "json-field-exists",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
