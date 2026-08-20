@@ -7,10 +7,10 @@
   "projectName" : "360GlobalNet",
   "tags" : [ "API" ],
   "apiDetails" : {
-    "method" : "GET",
-    "endpointPath" : "/login",
+    "method" : "POST",
+    "endpointPath" : "/users",
     "expectedStatusCode" : "200",
-    "responseAssertion" : "body-not-empty",
+    "responseAssertion" : "json-field-exists",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
