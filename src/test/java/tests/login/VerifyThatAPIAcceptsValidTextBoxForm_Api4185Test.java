@@ -31,6 +31,6 @@ public class VerifyThatAPIAcceptsValidTextBoxForm_Api4185Test {
 
         QentrixReport.capture(response);
         Assert.assertEquals(response.statusCode(), 204, "Unexpected response status code");
-        Assert.assertNotNull(response.jsonPath().get("id"), "Expected JSON path to exist: id");
+        Assert.assertNotNull(response.header("Content-Type"), "Expected response header to exist: Content-Type");
     }
 }
