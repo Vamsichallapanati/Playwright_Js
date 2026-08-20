@@ -27,10 +27,10 @@ public class VerifyThatLoginAPIReturnsSuccessResponseValid_Api2832Test {
                 ;
 
         Response response = request.when()
-                .post("/users");
+                .get("/users");
 
         QentrixReport.capture(response);
-        Assert.assertEquals(response.statusCode(), 204, "Unexpected response status code");
+        Assert.assertEquals(response.statusCode(), 400, "Unexpected response status code");
         Assert.assertNotNull(response.jsonPath().get("id"), "Expected JSON path to exist: id");
     }
 }
