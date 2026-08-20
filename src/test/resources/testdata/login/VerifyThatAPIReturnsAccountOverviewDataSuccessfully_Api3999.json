@@ -7,9 +7,9 @@
   "projectName" : "360GlobalNet",
   "tags" : [ "API" ],
   "apiDetails" : {
-    "method" : "POST",
+    "method" : "PATCH",
     "endpointPath" : "/users",
-    "expectedStatusCode" : "204",
+    "expectedStatusCode" : "202",
     "responseAssertion" : "header-exists",
     "contentType" : null,
     "assertionPath" : null,
