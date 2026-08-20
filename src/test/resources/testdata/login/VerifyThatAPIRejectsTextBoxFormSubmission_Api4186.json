@@ -1,0 +1,25 @@
+{
+  "id" : "4186",
+  "backendId" : "4186",
+  "title" : "Verify that API rejects text box form submission request with missing required field",
+  "module" : "login",
+  "projectId" : "187ba9ec-b05b-4ce3-ad6b-421700c71976",
+  "projectName" : "360GlobalNet",
+  "tags" : [ "API" ],
+  "apiDetails" : {
+    "method" : "PUT",
+    "endpointPath" : "/users",
+    "expectedStatusCode" : "400",
+    "responseAssertion" : "body-not-empty",
+    "contentType" : null,
+    "assertionPath" : null,
+    "expectedValue" : null,
+    "responseHeader" : null,
+    "maxResponseTimeMs" : null,
+    "schema" : null,
+    "pathParams" : null,
+    "queryParams" : null,
+    "headers" : null,
+    "requestBody" : null
+  }
+}
