@@ -9,8 +9,8 @@
   "apiDetails" : {
     "method" : "POST",
     "endpointPath" : "/users",
-    "expectedStatusCode" : "202",
-    "responseAssertion" : "body-not-empty",
+    "expectedStatusCode" : "204",
+    "responseAssertion" : "json-field-exists",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
