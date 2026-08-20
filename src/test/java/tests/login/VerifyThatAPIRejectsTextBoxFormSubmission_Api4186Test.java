@@ -27,10 +27,10 @@ public class VerifyThatAPIRejectsTextBoxFormSubmission_Api4186Test {
                 ;
 
         Response response = request.when()
-                .put("/users");
+                .get("/users");
 
         QentrixReport.capture(response);
         Assert.assertEquals(response.statusCode(), 400, "Unexpected response status code");
-        Assert.assertFalse(response.getBody().asString().isBlank(), "Response body should not be empty");
+        Assert.assertTrue(response.time() <= 2000L, "Response time exceeded 2000 ms");
     }
 }
