@@ -27,7 +27,7 @@ public class VerifyThatAPIReturnsAccountDetailsSuccessfullySpecific_Api4002Test 
                 ;
 
         Response response = request.when()
-                .put("/users");
+                .delete("/users");
 
         QentrixReport.capture(response);
         Assert.assertEquals(response.statusCode(), 200, "Unexpected response status code");
