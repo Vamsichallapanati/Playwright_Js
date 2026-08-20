@@ -27,10 +27,10 @@ public class VerifyThatAPIReturnsAccountOverviewDataSuccessfully_Api3999Test {
                 ;
 
         Response response = request.when()
-                .post("/users");
+                .patch("/users");
 
         QentrixReport.capture(response);
-        Assert.assertEquals(response.statusCode(), 204, "Unexpected response status code");
+        Assert.assertEquals(response.statusCode(), 202, "Unexpected response status code");
         Assert.assertNotNull(response.header("Content-Type"), "Expected response header to exist: Content-Type");
     }
 }
