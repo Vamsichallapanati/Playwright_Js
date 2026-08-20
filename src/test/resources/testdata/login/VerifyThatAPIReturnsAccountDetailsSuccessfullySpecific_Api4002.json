@@ -7,7 +7,7 @@
   "projectName" : "360GlobalNet",
   "tags" : [ "API" ],
   "apiDetails" : {
-    "method" : "PUT",
+    "method" : "DELETE",
     "endpointPath" : "/users",
     "expectedStatusCode" : "200",
     "responseAssertion" : "schema-validation",
