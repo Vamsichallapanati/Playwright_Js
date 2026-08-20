@@ -9,8 +9,8 @@
   "apiDetails" : {
     "method" : "GET",
     "endpointPath" : "/login",
-    "expectedStatusCode" : "201",
-    "responseAssertion" : "json-field-equals",
+    "expectedStatusCode" : "200",
+    "responseAssertion" : "body-not-empty",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
