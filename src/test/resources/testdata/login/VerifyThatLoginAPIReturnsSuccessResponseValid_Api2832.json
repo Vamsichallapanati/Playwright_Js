@@ -8,9 +8,9 @@
   "tags" : [ "API" ],
   "apiDetails" : {
     "method" : "GET",
-    "endpointPath" : "/login",
-    "expectedStatusCode" : "200",
-    "responseAssertion" : "body-not-empty",
+    "endpointPath" : "/users",
+    "expectedStatusCode" : "202",
+    "responseAssertion" : "json-field-equals",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
