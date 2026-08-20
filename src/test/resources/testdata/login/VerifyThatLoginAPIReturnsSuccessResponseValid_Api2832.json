@@ -8,8 +8,8 @@
   "tags" : [ "API" ],
   "apiDetails" : {
     "method" : "GET",
-    "endpointPath" : "/users",
-    "expectedStatusCode" : "200",
+    "endpointPath" : "/use",
+    "expectedStatusCode" : "202",
     "responseAssertion" : "json-field-exists",
     "contentType" : null,
     "assertionPath" : null,
