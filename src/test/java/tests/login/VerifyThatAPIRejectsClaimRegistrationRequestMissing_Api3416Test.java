@@ -27,10 +27,10 @@ public class VerifyThatAPIRejectsClaimRegistrationRequestMissing_Api3416Test {
                 ;
 
         Response response = request.when()
-                .delete("/users");
+                .put("/users");
 
         QentrixReport.capture(response);
-        Assert.assertEquals(response.statusCode(), 202, "Unexpected response status code");
-        Assert.assertFalse(response.getBody().asString().isBlank(), "Response body should not be empty");
+        Assert.assertEquals(response.statusCode(), 200, "Unexpected response status code");
+        Assert.assertNotNull(response.jsonPath().get("id"), "Expected JSON path to exist: id");
     }
 }
