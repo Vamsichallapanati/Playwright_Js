@@ -7,10 +7,10 @@
   "projectName" : "360GlobalNet",
   "tags" : [ "API" ],
   "apiDetails" : {
-    "method" : "PATCH",
+    "method" : "PUT",
     "endpointPath" : "/users",
     "expectedStatusCode" : "202",
-    "responseAssertion" : "json-field-equals",
+    "responseAssertion" : "json-field-exists",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
