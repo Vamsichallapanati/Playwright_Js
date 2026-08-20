@@ -7,10 +7,10 @@
   "projectName" : "360GlobalNet",
   "tags" : [ "API" ],
   "apiDetails" : {
-    "method" : "PUT",
+    "method" : "GET",
     "endpointPath" : "/users",
     "expectedStatusCode" : "400",
-    "responseAssertion" : "body-not-empty",
+    "responseAssertion" : "response-time",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
