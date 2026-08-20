@@ -10,7 +10,7 @@
     "method" : "POST",
     "endpointPath" : "/users",
     "expectedStatusCode" : "204",
-    "responseAssertion" : "json-field-exists",
+    "responseAssertion" : "header-exists",
     "contentType" : null,
     "assertionPath" : null,
     "expectedValue" : null,
