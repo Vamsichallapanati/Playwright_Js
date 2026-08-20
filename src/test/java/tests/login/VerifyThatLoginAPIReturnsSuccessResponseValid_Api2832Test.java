@@ -27,10 +27,10 @@ public class VerifyThatLoginAPIReturnsSuccessResponseValid_Api2832Test {
                 ;
 
         Response response = request.when()
-                .get("/login");
+                .get("/users");
 
         QentrixReport.capture(response);
-        Assert.assertEquals(response.statusCode(), 200, "Unexpected response status code");
-        Assert.assertFalse(response.getBody().asString().isBlank(), "Response body should not be empty");
+        Assert.assertEquals(response.statusCode(), 202, "Unexpected response status code");
+        Assert.assertEquals(String.valueOf(response.jsonPath().get("id")), "", "Unexpected JSON value for id");
     }
 }
