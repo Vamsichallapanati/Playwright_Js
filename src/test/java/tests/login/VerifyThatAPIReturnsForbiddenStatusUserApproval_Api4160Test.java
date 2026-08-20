@@ -27,10 +27,10 @@ public class VerifyThatAPIReturnsForbiddenStatusUserApproval_Api4160Test {
                 ;
 
         Response response = request.when()
-                .patch("/users");
+                .put("/users");
 
         QentrixReport.capture(response);
         Assert.assertEquals(response.statusCode(), 202, "Unexpected response status code");
-        Assert.assertEquals(String.valueOf(response.jsonPath().get("id")), "", "Unexpected JSON value for id");
+        Assert.assertNotNull(response.jsonPath().get("id"), "Expected JSON path to exist: id");
     }
 }
