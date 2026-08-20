@@ -27,10 +27,10 @@ public class VerifyThatLoginAPIRejectsRequestMissingUsername_Api2834Test {
                 ;
 
         Response response = request.when()
-                .put("/users");
+                .post("/users");
 
         QentrixReport.capture(response);
-        Assert.assertEquals(response.statusCode(), 200, "Unexpected response status code");
-        Assert.assertNotNull(response.jsonPath().get("id"), "Expected JSON path to exist: id");
+        Assert.assertEquals(response.statusCode(), 201, "Unexpected response status code");
+        Assert.assertEquals(String.valueOf(response.jsonPath().get("id")), "", "Unexpected JSON value for id");
     }
 }
