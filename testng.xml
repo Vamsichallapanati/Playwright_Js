@@ -12,10 +12,10 @@
             <class name="tests.login.VerifyThatAPIReturnsEmptyAccountsArrayUser_Api4001Test"/>
             <class name="tests.login.VerifyThatAPIReturnsAccountDetailsSuccessfullySpecific_Api4002Test"/>
             <class name="tests.login.VerifyThatAPIRejectsRequestNonExistentAccount_Api4003Test"/>
-            <class name="tests.login.VerifyThatAPIReturnsForbiddenStatusUserApproval_Api4160Test"/>
             <class name="tests.login.VerifyThatAPIAcceptsValidTextBoxForm_Api4185Test"/>
             <class name="tests.login.VerifyThatAPIRejectsTextBoxFormSubmission_Api4186Test"/>
             <class name="tests.login.VerifyThatLoginAPIReturnsSuccessResponseValid_Api2832Test"/>
+            <class name="tests.login.VerifyThatAPIReturnsForbiddenStatusUserApproval_Api4160Test"/>
         </classes>
     </test>
 </suite>
