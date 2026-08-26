@@ -1,0 +1,8 @@
+{
+  "login": {
+    "emptyUsernameScenario": {
+      "testCaseId": "2812",
+      "expectedValidationError": "username is required"
+    }
+  }
+}
