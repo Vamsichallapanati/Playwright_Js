@@ -8,10 +8,10 @@
         <classes>
             <class name="tests.login.VerifyThatLoginAPIRejectsRequestMissingUsername_Api2834Test"/>
             <class name="tests.login.VerifyThatAPIRejectsClaimRegistrationRequestMissing_Api3416Test"/>
-            <class name="tests.login.VerifyThatAPIReturnsEmptyAccountsArrayUser_Api4001Test"/>
             <class name="tests.login.VerifyThatAPIRejectsRequestNonExistentAccount_Api4003Test"/>
             <class name="tests.login.VerifyThatAPIAcceptsValidTextBoxForm_Api4185Test"/>
             <class name="tests.login.VerifyThatLoginAPIReturnsSuccessResponseValid_Api2832Test"/>
+            <class name="tests.login.VerifyThatAPIReturnsEmptyAccountsArrayUser_Api4001Test"/>
         </classes>
     </test>
 </suite>
