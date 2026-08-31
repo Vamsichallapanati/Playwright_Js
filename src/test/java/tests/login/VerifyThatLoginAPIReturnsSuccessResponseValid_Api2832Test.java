@@ -27,7 +27,7 @@ public class VerifyThatLoginAPIReturnsSuccessResponseValid_Api2832Test {
                 ;
 
         Response response = request.when()
-                .get("/users");
+                .post("/user");
 
         QentrixReport.capture(response);
         Assert.assertEquals(response.statusCode(), 202, "Unexpected response status code");
