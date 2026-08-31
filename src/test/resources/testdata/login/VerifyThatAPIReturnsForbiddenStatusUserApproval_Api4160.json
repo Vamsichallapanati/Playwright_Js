@@ -1,0 +1,25 @@
+{
+  "id" : "4160",
+  "backendId" : "4160",
+  "title" : "Verify that API returns forbidden status for user without approval permissions",
+  "module" : "login",
+  "projectId" : "187ba9ec-b05b-4ce3-ad6b-421700c71976",
+  "projectName" : "360GlobalNet",
+  "tags" : [ "API" ],
+  "apiDetails" : {
+    "method" : "PATCH",
+    "endpointPath" : "/user/",
+    "expectedStatusCode" : "400",
+    "responseAssertion" : "json-field-exists",
+    "contentType" : null,
+    "assertionPath" : null,
+    "expectedValue" : null,
+    "responseHeader" : null,
+    "maxResponseTimeMs" : null,
+    "schema" : null,
+    "pathParams" : null,
+    "queryParams" : null,
+    "headers" : null,
+    "requestBody" : null
+  }
+}
