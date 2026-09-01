@@ -1,0 +1,27 @@
+{
+  "loginPage": {
+    "url": "https://www.saucedemo.com/"
+  },
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "apiUser": {
+    "username": "student",
+    "password": "moodle26"
+  },
+  "noAccountsUser": {
+    "username": "user_no_accounts",
+    "password": "test_password"
+  },
+  "validation": {
+    "whitespaceInput": "   ",
+    "validLastName": "TestLastName",
+    "validEmail": "test@example.com"
+  },
+  "expectedMessages": {
+    "preferencesUpdated": "updated",
+    "firstNameError": "first name",
+    "noAccountsAvailable": "no accounts"
+  }
+}
