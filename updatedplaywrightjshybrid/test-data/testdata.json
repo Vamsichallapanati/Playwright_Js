@@ -1,8 +1,18 @@
 {
-  "login": {
-    "emptyUsernameScenario": {
-      "testCaseId": "2812",
-      "expectedValidationError": "username is required"
-    }
+  "claimsApproval": {
+    "invalidPassword": "wrongPassword",
+    "maxLengthRejectionReason": "This is a rejection reason that contains exactly the maximum number of allowed characters for the rejection reason field to test the boundary condition for maximum input length validation.",
+    "exceedsMaxLengthRejectionReason": "This is a rejection reason that intentionally exceeds the maximum number of allowed characters for the rejection reason field to test validation handling when input length is beyond the acceptable limit and should trigger appropriate error messages.",
+    "whitespaceOnlyRejectionReason": "     ",
+    "specialCharactersRejectionReason": "Claim rejected due to incomplete information @#$%&*",
+    "emptyStateMessage": "no pending claims are available",
+    "noResultsMessage": "no matching claims found",
+    "usernameRequiredError": "username required",
+    "invalidCredentialsError": "invalid credentials",
+    "rejectionReasonRequiredError": "rejection reason is required",
+    "claimAlreadyApprovedMessage": "already approved",
+    "claimAlreadyRejectedMessage": "already rejected",
+    "validRejectionReason": "Insufficient documentation provided",
+    "nonExistentClaimID": "CLAIM-999999"
   }
 }
