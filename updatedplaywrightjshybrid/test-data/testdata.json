@@ -1,0 +1,19 @@
+{
+  "claimsRegistration": {
+    "testCase3404": {
+      "claimNumber": "CLM2024007",
+      "policyNumber": "POL123462",
+      "claimantName": "David Blue",
+      "claimDescription": "Fire damage claim",
+      "expectedValidationMessage": "incident date is required"
+    },
+    "testCase3414": {
+      "claimNumber": "CLM2024008",
+      "policyNumber": "POL123463",
+      "claimantName": "Emma Green",
+      "incidentDate": "2024-01-15",
+      "claimDescription": "Valid claim for empty list test",
+      "emptyStateMessage": "no claims are registered yet"
+    }
+  }
+}
