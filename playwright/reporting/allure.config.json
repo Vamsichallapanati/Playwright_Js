@@ -1,0 +1,19 @@
+{
+  "resultsDir": "allure-results",
+  "reportDir": "allure-report",
+  "clean": true,
+  "categories": [
+    {
+      "name": "Product defects",
+      "matchedStatuses": [
+        "failed"
+      ]
+    },
+    {
+      "name": "Test defects",
+      "matchedStatuses": [
+        "broken"
+      ]
+    }
+  ]
+}
