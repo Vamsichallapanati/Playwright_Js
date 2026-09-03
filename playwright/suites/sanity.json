@@ -1,0 +1,4 @@
+{
+  "grep": "@sanity",
+  "reporter": "allure"
+}
