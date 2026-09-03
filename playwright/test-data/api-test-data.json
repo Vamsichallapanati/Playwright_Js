@@ -1,0 +1,8 @@
+{
+  "login": {
+    "endpoint": "/login",
+    "method": "POST",
+    "expectedSuccessStatusCodes": [200, 302],
+    "requiredResponseFields": ["token", "session", "sessionId", "authToken"]
+  }
+}
