@@ -1,0 +1,26 @@
+{
+  "name": "playwright-typescript",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript Framework",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/validate-framework.js",
+    "test:e2e": "echo Generate client tests first, then enable the native runner.",
+    "test:smoke": "npm run test:e2e -- --grep @smoke",
+    "test:sanity": "npm run test:e2e -- --grep @sanity",
+    "test:regression": "npm run test:e2e -- --grep @regression",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:serve": "allure serve allure-results",
+    "test:parallel": "npx playwright test --workers=4",
+    "test:sequential": "npx playwright test --workers=1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "@playwright/test": "^1.45.0",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "allure-playwright": "^2.15.1"
+  },
+  "type": "module"
+}
