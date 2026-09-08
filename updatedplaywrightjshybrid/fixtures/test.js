@@ -1,9 +1,13 @@
 import { test as base, expect } from '@playwright/test';
-import ClaimsApprovalPage from '../pages/ClaimsApprovalPage.js';
+import LoginPage from '../pages/LoginPage.js';
+import ClaimsRegistrationPage from '../pages/ClaimsRegistrationPage.js';
 
 export const test = base.extend({
-  claimsApprovalPage: async ({ page }, use) => {
-    await use(new ClaimsApprovalPage(page));
+  loginPage: async ({ page }, use) => {
+    await use(new LoginPage(page));
+  },
+  claimsRegistrationPage: async ({ page }, use) => {
+    await use(new ClaimsRegistrationPage(page));
   }
 });
 
